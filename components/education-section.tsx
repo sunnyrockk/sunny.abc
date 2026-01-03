@@ -10,7 +10,7 @@ export function EducationSection() {
           <div className="flex items-start gap-6">
             <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">
             <Link
-  href="https://www.srmist.edu.in/"
+  href="https://srmu.ac.in/"
   target="_blank"
   className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-full bg-white"
 >
