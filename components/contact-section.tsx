@@ -17,7 +17,7 @@ export function ContactSection() {
           <p className="mx-auto max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
             Want to chat? Feel free to reach out via email or connect with me on{" "}
             <a
-              href="https://www.linkedin.com/in/sunny-mall"
+              href="https://www.linkedin.com/in/sunny-mall-5aa4a8314/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
@@ -34,7 +34,7 @@ export function ContactSection() {
             href="mailto:sunnypratap859@gmail.com"
             className="text-lg hover:text-foreground hover:underline transition-colors"
           >
-            sunnypratap859@gmail.com
+          @
           </a>
         </div>
 
