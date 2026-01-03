@@ -9,13 +9,19 @@ export function EducationSection() {
         <Card className="border-border bg-card/50 p-8 transition-all hover:border-primary/50">
           <div className="flex items-start gap-6">
             <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">
-              <Image
-                src="/images/image.png"
-                alt="SRMU Logo"
-                width={64}
-                height={64}
-                className="h-full w-full object-contain p-1"
-              />
+            <Link
+  href="https://www.srmist.edu.in/"
+  target="_blank"
+  className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-full bg-white"
+>
+  <Image
+    src="/images/image.png"
+    alt="SRM UNIVERSITY"
+    width={64}
+    height={64}
+    className="h-full w-full object-contain p-1"
+  />
+</Link>
             </div>
             <div className="flex-1">
               <div className="mb-2 flex flex-wrap items-start justify-between gap-2">
