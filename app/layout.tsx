@@ -19,7 +19,9 @@ export const metadata: Metadata = {
   title: "Professional Portfolio",
   description: "Showcasing my work and expertise",
   generator: "Next.js",
-,
+  icons: {
+   apple: "/apple-icon.png",
+  }
 }
 
 export default function RootLayout({
