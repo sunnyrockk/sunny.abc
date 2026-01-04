@@ -17,9 +17,9 @@ export default function Page() {
       <main className="container relative mx-auto max-w-[1100px] px-4 py-20">
         <HeroSection />
         <AboutSection />
-        <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />
+        <SkillsSection />
         <EducationSection />
         <ContactSection />
       </main>

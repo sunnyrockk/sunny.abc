@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useState } from "react"
+import { useState } from "react";
 
 export function SkillsSection() {
-  const [hoveredTech, setHoveredTech] = useState<string | null>(null)
+  const [hoveredTech, setHoveredTech] = useState<string | null>(null);
 
   const technologies = [
     "TypeScript",
@@ -21,13 +21,16 @@ export function SkillsSection() {
     "Git",
     "Express.js",
     "REST APIs",
-    "DSA",
-  ]
+    "Data Structures & Algorithms",
+  ];
 
   return (
-    <section id="skills" className="py-24">
-      <div className="space-y-8">
-        <h2 className="text-balance text-4xl font-light tracking-tight">Technologies & Skills</h2>
+    <section id="skills" className="w-full py-24 md:py-32">
+      <div className="mx-auto max-w-4xl px-5 sm:px-6 md:px-8 lg:px-10 space-y-8">
+        <h2 className="text-balance text-4xl font-light tracking-tight sm:text-5xl">
+          Technologies & Skills
+        </h2>
+
         <div className="flex flex-wrap gap-3">
           {technologies.map((tech, index) => (
             <div
@@ -40,17 +43,22 @@ export function SkillsSection() {
               onMouseLeave={() => setHoveredTech(null)}
             >
               <span
-                className={`text-sm font-medium transition-colors duration-300 ${hoveredTech === tech ? "text-primary" : "text-muted-foreground"}`}
+                className={`text-sm font-medium transition-colors duration-300 ${
+                  hoveredTech === tech ? "text-primary" : "text-muted-foreground"
+                }`}
               >
                 {tech}
               </span>
+
               <div
-                className={`absolute inset-0 rounded-full bg-gradient-to-r from-primary/10 to-primary/5 transition-opacity duration-300 ${hoveredTech === tech ? "opacity-100" : "opacity-0"}`}
+                className={`absolute inset-0 rounded-full bg-gradient-to-r from-primary/10 to-primary/5 transition-opacity duration-300 ${
+                  hoveredTech === tech ? "opacity-100" : "opacity-0"
+                }`}
               />
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

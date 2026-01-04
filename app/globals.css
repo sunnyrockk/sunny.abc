@@ -201,3 +201,108 @@
     animation: float 6s ease-in-out infinite;
   }
 }
+.cursor-glow {
+  position: fixed;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(120, 115, 245, 0.45),
+    transparent 70%
+  );
+  transform: translate(-50%, -50%);
+  filter: blur(40px);
+  z-index: 0;
+}
+main, section {
+  position: relative;
+  z-index: 1;
+}
+.cursor-trail-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: rgba(120, 115, 245, 0.6);
+  filter: blur(2px);
+  z-index: 0;
+}
+.click-ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(120, 115, 245, 0.8);
+  transform: translate(-50%, -50%);
+  animation: ripple 0.6s ease-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(3);
+  }
+}
+/* ===============================
+   GLASSMORPHISM CARD
+================================ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ===============================
+   MAGNETIC BUTTON
+================================ */
+.magnetic-btn {
+  position: relative;
+  transition: transform 0.25s ease;
+  will-change: transform;
+}
+
+/* ===============================
+   HOVER VIDEO PREVIEW
+================================ */
+.video-preview {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.group:hover .video-preview {
+  opacity: 1;
+}
+
+.group:hover .preview-image {
+  opacity: 0;
+}
+/* ===============================
+   CURSOR PINK RING
+================================ */
+.cursor-ring {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  pointer-events: none;
+  border: 2px solid rgba(255, 105, 180, 0.9); /* HOT PINK */
+  box-shadow:
+    0 0 10px rgba(255, 105, 180, 0.6),
+    0 0 25px rgba(255, 105, 180, 0.4);
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.15s ease,
+    height 0.15s ease,
+    border 0.15s ease;
+  z-index: 0;
+}

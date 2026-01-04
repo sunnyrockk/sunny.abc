@@ -1,6 +1,6 @@
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ArrowUpRight } from "lucide-react"
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ArrowUpRight } from "lucide-react";
 
 export function ExperienceSection() {
   const experiences = [
@@ -31,12 +31,15 @@ export function ExperienceSection() {
       technologies: ["JavaScript", "Vue.js", "SASS", "WordPress"],
       link: "#",
     },
-  ]
+  ];
 
   return (
-    <section id="experience">
-      <div className="container max-w-5xl py-24">
-        <h2 className="mb-12 text-balance text-4xl font-light tracking-tight">Experience</h2>
+    <section id="experience" className="w-full py-24 md:py-32">
+      <div className="mx-auto max-w-4xl px-5 sm:px-6 md:px-8 lg:px-10">
+        <h2 className="mb-12 text-balance text-4xl font-light tracking-tight sm:text-5xl">
+          Experience
+        </h2>
+
         <div className="flex flex-col gap-8">
           {experiences.map((exp, index) => (
             <Card
@@ -53,10 +56,16 @@ export function ExperienceSection() {
                   </div>
                   <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-primary" />
                 </div>
+
                 <p className="text-pretty leading-relaxed text-muted-foreground">{exp.description}</p>
+
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="bg-primary/10 text-primary">
+                    <Badge
+                      key={tech}
+                      variant="secondary"
+                      className="bg-primary/10 text-primary"
+                    >
                       {tech}
                     </Badge>
                   ))}
@@ -67,5 +76,5 @@ export function ExperienceSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

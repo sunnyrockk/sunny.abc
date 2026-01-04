@@ -75,8 +75,9 @@
 }
 
 @theme inline {
-  --font-sans: 'Geist', 'Geist Fallback';
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+ --font-sans: var(--font-inter), Inter, system-ui, sans-serif;
+--font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -122,4 +123,40 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+.icon-btn {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: hsl(var(--muted));
+  transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+  background-color: hsl(var(--primary));
+  color: white;
+  transform: translateY(-2px);
+}
+/* Animated Gradient Background */
+.animated-bg {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(
+    270deg,
+    #ff6ec4,
+    #7873f5,
+    #42e695
+  );
+  background-size: 600% 600%;
+  animation: gradientBG 15s ease infinite;
+  overflow: hidden;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
