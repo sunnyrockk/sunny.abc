@@ -40,7 +40,10 @@ export function ContactSection() {
             size="lg"
             variant="outline"
             className="gap-2 bg-transparent px-8 transition-all hover:scale-105 active:scale-95"
-            onClick={() => window.open("/Sunny-Pratap-Resume.pdf", "_blank")}
+           onClick={() =>
+  window.open("https://raw.githubusercontent.com/sunnyrockk/Resume/main/Sunny%20mall%20resume.pdf", "_blank")
+}
+
           >
             <FileText className="h-4 w-4" />
             View Resume
