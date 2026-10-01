@@ -2,21 +2,21 @@
 @import "tw-animate-css";
 
 :root {
-  /* Updated to lighter, softer color palette for modern look */
-  --background: oklch(0.98 0.005 250);
-  --foreground: oklch(0.35 0.015 250);
+  /* Warm editorial neutrals with a focused violet accent */
+  --background: oklch(0.975 0.008 90);
+  --foreground: oklch(0.16 0.012 285);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.35 0.015 250);
+  --card-foreground: oklch(0.16 0.012 285);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.35 0.015 250);
-  --primary: oklch(0.6 0.18 280);
-  --primary-foreground: oklch(0.98 0.005 250);
-  --secondary: oklch(0.95 0.01 250);
-  --secondary-foreground: oklch(0.35 0.015 250);
-  --muted: oklch(0.92 0.01 250);
-  --muted-foreground: oklch(0.55 0.015 250);
-  --accent: oklch(0.65 0.15 240);
-  --accent-foreground: oklch(0.98 0.005 250);
+  --popover-foreground: oklch(0.16 0.012 285);
+  --primary: oklch(0.52 0.19 285);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.93 0.015 90);
+  --secondary-foreground: oklch(0.2 0.012 285);
+  --muted: oklch(0.93 0.01 90);
+  --muted-foreground: oklch(0.48 0.018 285);
+  --accent: oklch(0.82 0.16 120);
+  --accent-foreground: oklch(0.18 0.012 285);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.88 0.01 250);
@@ -39,14 +39,14 @@
 }
 
 .dark {
-  --background: oklch(0.18 0.02 250);
-  --foreground: oklch(0.95 0.01 250);
-  --card: oklch(0.22 0.02 250);
-  --card-foreground: oklch(0.95 0.01 250);
-  --popover: oklch(0.22 0.02 250);
-  --popover-foreground: oklch(0.95 0.01 250);
-  --primary: oklch(0.65 0.2 200);
-  --primary-foreground: oklch(0.18 0.02 250);
+  --background: oklch(0.13 0.012 285);
+  --foreground: oklch(0.96 0.008 90);
+  --card: oklch(0.18 0.016 285);
+  --card-foreground: oklch(0.96 0.008 90);
+  --popover: oklch(0.18 0.016 285);
+  --popover-foreground: oklch(0.96 0.008 90);
+  --primary: oklch(0.7 0.16 285);
+  --primary-foreground: oklch(0.13 0.012 285);
   --secondary: oklch(0.28 0.02 250);
   --secondary-foreground: oklch(0.95 0.01 250);
   --muted: oklch(0.72 0.01 250);
@@ -136,7 +136,7 @@
     @apply font-sans;
     font-weight: 700;
     letter-spacing: -0.02em;
-    color: oklch(0.15 0.02 250);
+    color: var(--foreground);
   }
 
   p,
